@@ -1,0 +1,23 @@
+package main
+
+import "fmt"
+
+func main() {
+	var m map[string][]string
+	fmt.Println(m)
+
+	m = map[string][]string{
+		"coffee": {"Coffee", "Espresso", "Cappuccino"},
+		"tea":    {"Hot Tea", "Chai Tea", "Chai Latte"},
+	}
+
+	fmt.Println(m["coffee"])
+
+	fmt.Println(m)
+
+	m["other"] = []string{"Hot Chocolate"}
+	fmt.Println(m)
+
+	delete(m, "tea")
+
+}
