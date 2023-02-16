@@ -4,13 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="46ee287e-6653-4b02-b795-3295b32a20a9" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/if.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/loop.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/switch.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="46ee287e-6653-4b02-b795-3295b32a20a9" name="Changes" comment="Messing around with fundamentals.   Some of this is quite fun.">
+      <change afterPath="$PROJECT_DIR$/defer.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/menu/data.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/menu/menu.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/panic.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GoFundamentals.iml" beforeDir="false" afterPath="$PROJECT_DIR$/GoFundamentals.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/struct.go" beforeDir="false" afterPath="$PROJECT_DIR$/struct.go" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -127,8 +126,16 @@
       <option name="presentableId" value="Default" />
       <updated>1676496100455</updated>
       <workItem from="1676496101915" duration="11683000" />
-      <workItem from="1676559178672" duration="2436000" />
+      <workItem from="1676559178672" duration="8735000" />
     </task>
+    <task id="LOCAL-00001" summary="Messing around with fundamentals.   Some of this is quite fun.">
+      <created>1676570987122</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1676570987123</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -144,6 +151,10 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Messing around with fundamentals.   Some of this is quite fun." />
+    <option name="LAST_COMMIT_MESSAGE" value="Messing around with fundamentals.   Some of this is quite fun." />
   </component>
   <component name="VgoProject">
     <settings-migrated>true</settings-migrated>
