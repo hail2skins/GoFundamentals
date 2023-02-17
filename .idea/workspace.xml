@@ -4,12 +4,22 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="46ee287e-6653-4b02-b795-3295b32a20a9" name="Changes" comment="Messing around with fundamentals.   Some of this is quite fun.">
-      <change afterPath="$PROJECT_DIR$/defer.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/menu/data.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/menu/menu.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/panic.go" afterDir="false" />
+    <list default="true" id="46ee287e-6653-4b02-b795-3295b32a20a9" name="Changes" comment="Struct is the main main here :)">
+      <change afterPath="$PROJECT_DIR$/channel.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/channelloop.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/custom.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/error.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/generic.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/goofy.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/interfaces.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main_test.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/select.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wait.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/menu/data.go" beforeDir="false" afterPath="$PROJECT_DIR$/menu/data.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/menu/menu.go" beforeDir="false" afterPath="$PROJECT_DIR$/menu/menu.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/panic.go" beforeDir="false" afterPath="$PROJECT_DIR$/panic.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/struct.go" beforeDir="false" afterPath="$PROJECT_DIR$/struct.go" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -56,7 +66,7 @@
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;
   }
 }</component>
-  <component name="RunManager" selected="Go Build.go build GoFundamentals">
+  <component name="RunManager" selected="Go Test.main_test.go">
     <configuration default="true" type="AZURE_FUNCTION_SUPPORT" factoryName="Run Functions">
       <option name="appName" />
       <option name="appServicePlanName" />
@@ -107,12 +117,49 @@
       <output_directory value="$PROJECT_DIR$" />
       <method v="2" />
     </configuration>
+    <configuration name="TestAdd in GoFundamentals" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+      <module name="GoFundamentals" />
+      <working_directory value="$PROJECT_DIR$" />
+      <kind value="PACKAGE" />
+      <package value="GoFundamentals" />
+      <directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$" />
+      <framework value="gotest" />
+      <pattern value="^\QTestAdd\E$" />
+      <method v="2" />
+    </configuration>
+    <configuration name="go test GoFundamentals" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+      <module name="GoFundamentals" />
+      <working_directory value="$PROJECT_DIR$" />
+      <kind value="PACKAGE" />
+      <package value="GoFundamentals" />
+      <directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$" />
+      <framework value="gotest" />
+      <method v="2" />
+    </configuration>
+    <configuration name="main_test.go" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+      <module name="GoFundamentals" />
+      <working_directory value="$PROJECT_DIR$" />
+      <kind value="FILE" />
+      <package value="GoFundamentals" />
+      <directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$/main_test.go" />
+      <framework value="gotest" />
+      <method v="2" />
+    </configuration>
     <list>
       <item itemvalue="Go Build.go build cli.go" />
       <item itemvalue="Go Build.go build GoFundamentals" />
+      <item itemvalue="Go Test.TestAdd in GoFundamentals" />
+      <item itemvalue="Go Test.go test GoFundamentals" />
+      <item itemvalue="Go Test.main_test.go" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Go Test.main_test.go" />
+        <item itemvalue="Go Test.TestAdd in GoFundamentals" />
+        <item itemvalue="Go Test.go test GoFundamentals" />
         <item itemvalue="Go Build.go build GoFundamentals" />
       </list>
     </recent_temporary>
@@ -126,7 +173,7 @@
       <option name="presentableId" value="Default" />
       <updated>1676496100455</updated>
       <workItem from="1676496101915" duration="11683000" />
-      <workItem from="1676559178672" duration="8735000" />
+      <workItem from="1676559178672" duration="22715000" />
     </task>
     <task id="LOCAL-00001" summary="Messing around with fundamentals.   Some of this is quite fun.">
       <created>1676570987122</created>
@@ -135,7 +182,14 @@
       <option name="project" value="LOCAL" />
       <updated>1676570987123</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Struct is the main main here :)">
+      <created>1676590847095</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1676590847096</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -154,9 +208,13 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Messing around with fundamentals.   Some of this is quite fun." />
-    <option name="LAST_COMMIT_MESSAGE" value="Messing around with fundamentals.   Some of this is quite fun." />
+    <MESSAGE value="Struct is the main main here :)" />
+    <option name="LAST_COMMIT_MESSAGE" value="Struct is the main main here :)" />
   </component>
   <component name="VgoProject">
     <settings-migrated>true</settings-migrated>
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/GoFundamentals$go_test_GoFundamentals.out" NAME="go test GoFundamentals Coverage Results" MODIFIED="1676610940581" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="GoCoverage" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
   </component>
 </project>

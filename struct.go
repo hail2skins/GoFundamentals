@@ -26,7 +26,10 @@ loop:
 		case "1":
 			menu.Print()
 		case "2":
-			menu.Add()
+			err := menu.Add()
+			if err != nil {
+				fmt.Println(fmt.Errorf("invalid input: %w", err))
+			}
 		case "q":
 			break loop
 		default:

@@ -1,21 +1,40 @@
 package main
 
-import "fmt"
+import (
+	"errors"
+	"fmt"
+)
 
 func main() {
-	dividend, divisor := 10, 5
-	fmt.Printf("%v divided by %v is %v\n", dividend, divisor, divide(dividend, divisor))
+	//fmt.Println(divide(10, 0))
 
-	dividend, divisor = 10, 0
-	fmt.Printf("%v divided by %v is %v\n", dividend, divisor, divide(dividend, divisor))
+	result, err := divide1(10, 0)
+	if err != nil {
+		fmt.Println(err)
+		return
+	}
+	fmt.Println("result:", result)
 }
 
-func divide(dividend, divisor int) int {
+func divide(l, r int) int {
+	return l / r
+}
+
+func divide1(l, r int) (int, error) {
+	if r == 0 {
+		return 0, errors.New("invalid divisor: must not be zero")
+	}
+
+	return l / r, nil
+}
+
+func divide2(l, r int) (result int, err error) {
 	defer func() {
 		if msg := recover(); msg != nil {
-			fmt.Println(msg)
+			result = 0
+			err = fmt.Errorf("%v", msg)
 		}
-	}()
 
-	return dividend / divisor
+	}()
+	return l / r, nil
 }
